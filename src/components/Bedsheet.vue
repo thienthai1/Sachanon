@@ -23,6 +23,7 @@
             v-for="(item,i) in slides"
             :key="i"
             mb-2
+            mt-3
       >
         <div>
                   <v-img
@@ -83,6 +84,21 @@ import VueEasyLightbox from 'vue-easy-lightbox'
           },
           {
             src: require('../assets/S__3080216.jpg')
+          },
+          {
+            src: require('../assets/S__19914823.jpg')
+          },
+          {
+            src: require('../assets/S__19914824.jpg')
+          },
+          {
+            src: require('../assets/S__19914825.jpg')
+          },
+          {
+            src: require('../assets/S__19914826.jpg')
+          },
+          {
+            src: require('../assets/S__19914827.jpg')
           }
         ],
         towels: [
