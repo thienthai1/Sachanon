@@ -2,13 +2,40 @@
 	<v-container class="grey lighten-4" style="opacity=0.5;">
 	<v-layout row wrap mt-5>
 		<v-flex d-flex xs12 sm6 mt-2>
-		      <v-carousel height=600px>
-        		<v-carousel-item
-          		v-for="(item,i) in slides"
-          		:key="i"
-          		:src="item.src"
-        		></v-carousel-item>
-      		</v-carousel>
+        <v-layout row wrap>
+        <v-flex xs12>
+          <v-carousel height=600px>
+            <v-carousel-item
+              v-for="(item,i) in slides"
+              :key="i"
+              :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-flex>
+      <VueEasyLightbox
+          :visible="visible"
+          :imgs="imgs"
+          :index="index"
+          @hide="handleHide"
+      ></VueEasyLightbox>
+      <v-flex 
+        d-flex
+            v-for="(item,i) in slides"
+            :key="i"
+            mb-2
+            mt-3
+      >
+        <div>
+                  <v-img
+        :src="item.src"
+        width = 250
+        height = 150
+        @click="showSingle(item.src)"
+        style="cursor:pointer"
+      ></v-img>
+        </div>
+      </v-flex>
+      </v-layout>
 		</v-flex>
 		<v-flex d-flex xs12 sm6 mt-5>
 			<div>
@@ -30,30 +57,6 @@
   			</v-data-table>
 			</div>
 		</v-flex>
-      <VueEasyLightbox
-          :visible="visible"
-          :imgs="imgs"
-          :index="index"
-          @hide="handleHide"
-      ></VueEasyLightbox>
-      <v-flex 
-        d-flex
-            v-for="(item,i) in slides"
-            :key="i"
-            md3
-            mt-3
-      >
-        <div>
-                  <v-img
-        :src="item.src"
-        width = 250
-        height = 150
-        @click="showSingle(item.src)"
-        ml-5
-        style="cursor:pointer"
-      ></v-img>
-        </div>
-      </v-flex>
 	</v-layout>
 	</v-container>
 </template>
