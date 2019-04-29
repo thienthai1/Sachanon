@@ -81,7 +81,11 @@ import VueEasyLightbox from 'vue-easy-lightbox'
           },
           {
             src: require('../assets/towel-127.jpg'),
-          }
+          },
+          {
+            src: require('../assets/S__20094980.jpg'),
+          },
+
         ],
         towels: [
           {
