@@ -5,14 +5,37 @@
         <v-carousel-item
           v-for="(item,i) in slides"
           :key="i"
-          :src="item.src"
-        ></v-carousel-item>
+        >
+          
+                  <v-img
+                    :src="item.src"
+                    class="grey lighten-2"
+                    position="50% 50%"
+                    height=100%
+                    width=100%
+                  >
+
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
+ 
+
+        </v-carousel-item>
       </v-carousel>
     </v-layout>
     <v-divider class="my-3"></v-divider>
        <v-layout align-center>
         <v-flex>
-          <h3 style="text-decoration: underline;" class="display-3 text-xs-center font-weight-medium brown--text text--lighten-2">ษาชานนท์เทคซ์ไทล์</h3>
+          <h3 style="text-decoration: underline;" class="display-3 text-xs-center font-weight-medium brown--text text--lighten-2">ษาชานนท์เทคซ์ไทล์<i class="fab fa-accessible-icon"></i></h3>
           <v-card-text style="text-align: justify;" class="text-xs-center headline font-italic pt-1 green--text text--darken-2 font-weight-bold">
 <!--             "ผ้าโรงงานของเราประกอบไปด้วย ผ้าขนหนูหลากหลายประเภทไม่ว่าจะเป็น ผ้าเช็ดตัว ผ้าขนหนูพรีเมี่ยม ผ้าเช็ดหน้า ผ้าเช็ดผม ผ้าสำหรับเป็นของชำร่วยให้ลูกค้าผ้าสำหรับธุรกิจสปาและโรงแรม รวมถึง ผ้าขนหนูรับไหว้สำหรับงานแต่งงานแบบต่างๆ" -->
                   "เราผลิตและจำหน่ายสินค้าเช่น ผ้าขนหนู ผ้าเช็ดผม ผ้าเช็ดมือ ผ้าปู เครื่องนอน เกรดพรีเมี่ยม สำหรับ โรงแรม รีสอร์ท สปา และสามารถใช้สำหรับเป็นของชำร่วยเพื่อแจกในงานและโอกาสต่างๆได้ เรารับประกันคุณภาพการทำงานกว่า 10 ปีคัดสรรสิ่งที่ดีที่สุดสำหรับลูกค้าทุกท่าน"
@@ -28,7 +51,22 @@
                   <v-img
                     :src="towel"
                     height=300px
-                  ></v-img>
+                    aspect-ratio="1"
+                    class="grey lighten-2"
+                  >
+                    
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -57,9 +95,23 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="require('../assets/S__3080217.jpg')"
+                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__19914824.jpg?alt=media&token=10ecc972-4094-4b83-a1e3-d0593fbc4551"
                     height=300px
-                  ></v-img>
+                    class="grey lighten-2"
+                  >
+
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -70,9 +122,23 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="require('../assets/S__3121214.jpg')"
+                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__3121214.jpg?alt=media&token=5b3c4289-6808-4cda-a855-acd60ebcff1a"
                     height=300px
-                  ></v-img>
+                    class="grey lighten-2"
+                  >
+                    
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -101,9 +167,23 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="require('../assets/towel-127.jpg')"
+                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/towel-127.jpg?alt=media&token=df4b5037-fbb2-47fb-8b3d-4078197f41a9"
                     height=300px
-                  ></v-img>
+                    class="grey lighten-2"
+                  >
+                    
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -114,9 +194,23 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="require('../assets/S__3129347.jpg')"
+                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__3129347.jpg?alt=media&token=a7c5ec5d-6861-4b8e-8fdd-ae43e28e5b44"
                     height=300px
-                  ></v-img>
+                    class="grey lighten-2"
+                  >
+                    
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -189,13 +283,13 @@ import towel from "../assets/bath_towel-84.jpg"
   export default {
   data () {
       return {
-        towel: towel,
+        towel: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/bath_towel-84.jpg?alt=media&token=70f76661-b83b-48ac-b546-18721ecd73ad",
         slides: [
           {
-            src: slide1,
+            src: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/towel-1.jpg?alt=media&token=21c18131-064d-4997-a002-c3699d8f917f",
           },
           {
-            src: slide2,
+            src: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/bath_towel-55.jpg?alt=media&token=5d581452-1641-41a4-901c-b50f2097c334",
           }
         ],
         lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,

@@ -1,28 +1,24 @@
 <template>
-	<v-container class="grey lighten-4">
-		<v-layout>
-		  <div>
-		    <button @click="showSingle">Show single picture.</button>
-		    <button @click="showMultiple">Show a group of pictures.</button>
-		    <VueEasyLightbox
-		      :visible="visible"
-		      :imgs="imgs"
-		      :index="index"
-		      @hide="handleHide"
-		    ></VueEasyLightbox>
-
-		    <!-- Component name: 'vue-easy-lightbox' -->
-		    <!--
-		      <vue-easy-lightbox
-		        :visible="visible"
-		        :imgs="imgs"
-		        :index="index"
-		        @hide="handleHide"
-		      ></vue-easy-lightbox>
-		     -->
-		  </div>
-		</v-layout>
-	</v-container>
+<v-layout>
+    <v-flex xs12 sm6 offset-sm3>
+                     <v-img
+                  src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/bath_towel-84.jpg?alt=media&token=70f76661-b83b-48ac-b546-18721ecd73ad"
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                >
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+                </v-img>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>

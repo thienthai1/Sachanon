@@ -8,7 +8,21 @@
                     :src="require('../assets/IMG_2306.jpg')"
                     position="50% 50%"
                     height=400px
-                  ></v-img>
+                    class="grey lighten-2"
+                  >
+                  	
+                  <template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
+
+                  </v-img>
 	  </v-jumbotron>
 	  <v-divider class="my-4"></v-divider>
 	  <v-layout row wrap>

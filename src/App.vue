@@ -120,6 +120,33 @@
         </v-list>
         <v-divider></v-divider>
       </v-navigation-drawer>
+      <v-footer
+        height="auto"
+        class="primary"
+      >
+        <v-card
+          class="flex primary white--text"
+          flat
+          tile
+        >
+          <v-card-title class="teal primary">
+             &copy;2019.—  <strong>Sachanon Textile All Rights Reserved.</strong><br/> 
+                        <v-spacer></v-spacer>
+
+            
+            
+                         <v-spacer></v-spacer>
+            
+            <strong class="font-weight-bold"><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/><img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line:@scntextile</strong>
+          </v-card-title>
+    
+<!--           <v-card-actions class="primary">
+                 &copy;2019 — <strong>  Sachanon Textile</strong>
+            <v-spacer></v-spacer>
+            <strong class="body-1 font-weight-bold">ติดต่อ: 089-788-5439, 085-755-8581 (คุณหมู)</strong>
+          </v-card-actions> -->
+        </v-card>
+      </v-footer>
   </v-app>
 </template>
 
@@ -160,6 +187,13 @@ export default {
         { title: 'ผ้าเช็ดเท้า', url: '/bathmat'},
         { title: 'ปลอกหมอน', url: '/pillow' },
         { title: 'เสื้อคลุมอาบน้ำ', url: '/bathrobe'}
+      ],
+      icons: [
+        'fas fa-lock',
+        'fas fa-lock',
+        'fas fa-lock',
+        'fas fa-lock',
+        'fas fa-lock'
       ]
     }
   }

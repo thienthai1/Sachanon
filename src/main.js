@@ -13,6 +13,13 @@ import Bedsheet from './components/Bedsheet'
 import Pillow from './components/Pillow'
 import Lightbox from 'vue-easy-lightbox'
 import testpic from './components/testpic'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCoffee)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
