@@ -72,10 +72,10 @@
         </v-flex>
         <v-flex d-flex xs12 sm7>
           <div>
-            <h1 style="text-decoration: underline;" class="ml-5 mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าเช็ดตัว</h1>
+            <h1 style="text-decoration: underline;" class="ml-5 mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าขนหนู</h1>
             <p class="ml-5 text-xs-center font-weight-regular subheading brown--text text--darken-2">
  <!--              เราเชื่อว่าคนแต่ละคนมีความชอบที่แตกต่างกัน เราจึงพัฒนาผ้าขนหนูของเราให้มีสีสัน และ ลวดลายหลากหลายรูปแบบ บางคนชอบความเรียบง่าย จึงอาจจะเลือกผ้าขนหนูสีพื้น ส่วนบางคนอาจจะชอบลวดลายที่มากขึ้น ซึ่งอาจจะเหมาะกับผ้าขนหนูทอลายในตัว แต่ไม่ว่าใครจะชอบสีสัน ลวดลายอย่างไรก็มั่นใจได้ว่า Chapeau Towel ได้คัดสรรผ้าฝ้ายคุณภาพ Cotton 100% มาให้บริการในทุกๆผืนของเรา ที่มาพร้อมกับสีย้อมผ้าคุณภาพที่ได้รับมาตรฐานระดับสากล -->
-                    ผ้าเช็ดตัวที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ 
+                    ผ้าขนหนูที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ 
               <br/><br/><v-btn to="/towel" small color="primary">ดูเพิ่มเติม</v-btn></p>
           </div>
         </v-flex>
@@ -95,7 +95,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__19914824.jpg?alt=media&token=10ecc972-4094-4b83-a1e3-d0593fbc4551"
+                    :src="require('../assets/bath_towel-55.jpg')"
                     height=300px
                     class="grey lighten-2"
                   >
@@ -122,7 +122,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__3121214.jpg?alt=media&token=5b3c4289-6808-4cda-a855-acd60ebcff1a"
+                    :src="require('../assets/S__3121222.jpg')"
                     height=300px
                     class="grey lighten-2"
                   >
@@ -167,7 +167,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/towel-127.jpg?alt=media&token=df4b5037-fbb2-47fb-8b3d-4078197f41a9"
+                    :src="require('../assets/towel-127.jpg')"
                     height=300px
                     class="grey lighten-2"
                   >
@@ -194,7 +194,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    src="https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/S__3129347.jpg?alt=media&token=a7c5ec5d-6861-4b8e-8fdd-ae43e28e5b44"
+                    :src="require('../assets/S__3129347.jpg')"
                     height=300px
                     class="grey lighten-2"
                   >
@@ -283,13 +283,13 @@ import towel from "../assets/bath_towel-84.jpg"
   export default {
   data () {
       return {
-        towel: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/bath_towel-84.jpg?alt=media&token=70f76661-b83b-48ac-b546-18721ecd73ad",
+        towel: towel,
         slides: [
           {
-            src: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/towel-1.jpg?alt=media&token=21c18131-064d-4997-a002-c3699d8f917f",
+            src: slide1,
           },
           {
-            src: "https://firebasestorage.googleapis.com/v0/b/sachanon-2ae27.appspot.com/o/bath_towel-55.jpg?alt=media&token=5d581452-1641-41a4-901c-b50f2097c334",
+            src: slide2,
           }
         ],
         lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,

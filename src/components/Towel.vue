@@ -39,11 +39,11 @@
 		</v-flex>
 		<v-flex d-flex xs12 sm6 mt-2>
 			<div>
-			<p style="text-decoration: underline;" class="display-2 font-weight-bold brown--text text--lighten-2 text-xs-center">ผ้าเช็ดตัว Cotton100%</p>
+			<p style="text-decoration: underline;" class="display-2 font-weight-bold brown--text text--lighten-2 text-xs-center">ผ้าขนหนู Cotton100%</p>
 			<p class="display-1 font-weight-bold purple--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> มีหลากหลายไซส์ให้เลือก</p>
 			<p class="display-1 font-weight-bold lime--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> ขนหลุดล่วงน้อย</p>
 			<p class="display-1 font-weight-bold orange--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> ซับน้ำดี</p>
-			<p class="ml-5 mr-5 text-xs-center">ผ้าเช็ดตัวที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ</p>
+			<p class="ml-5 mr-5 text-xs-center">ผ้าขนหนูที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ</p>
 			<v-data-table
 			    :headers="headers"
 			    :items="towels"
@@ -94,25 +94,53 @@ import VueEasyLightbox from 'vue-easy-lightbox'
         ],
         towels: [
         	{
-        		name: 'เช็ดตัว 30*60 นิ้ว',
+        		name: 'ผ้าเช็ดตัว 30*60 นิ้ว',
         		weight: '18 ปอนด์'
         	},
         	{
-        		name: 'เช็ดตัว 30*60 นิ้ว',
+        		name: 'ผ้าเช็ดตัว 30*60 นิ้ว',
         		weight: '16 ปอนด์'
         	},
           {
-            name: 'เช็ดตัว 27*54 นิ้ว',
+            name: 'ผ้าเช็ดตัว 27*54 นิ้ว',
             weight: '14 ปอนด์'
           },
         	{
-        		name: 'เช็ดตัว 27*54 นิ้ว',
+        		name: 'ผ้าเช็ดตัว 27*54 นิ้ว',
         		weight: '12 ปอนด์'
         	},
         	{
-        		name: 'เช็ดตัว 27*54 นิ้ว',
+        		name: 'ผ้าเช็ดตัว 27*54 นิ้ว',
         		weight: '10 ปอนด์'
-        	}
+        	},
+          {
+            name: 'ผ้าเช็ดมือ 18*32 นิ้ว',
+            weight: '5 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดมือ 16*32 นิ้ว',
+            weight: '4 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดมือ 15*30 นิ้ว',
+            weight: '3.5 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดมือ 14*28 นิ้ว',
+            weight: '3.5 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดหน้า 13*13 นิ้ว',
+            weight: '1.5 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดหน้า 12*12 นิ้ว',
+            weight: '1.5 ปอนด์'
+          },
+          {
+            name: 'ผ้าเช็ดหน้า 12*12 นิ้ว',
+            weight: '1 ปอนด์'
+          }
         ],
         headers: [
         	{
