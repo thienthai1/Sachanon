@@ -44,11 +44,11 @@
 		</v-flex>
 		<v-flex d-flex xs12 sm6 mt-5>
 			<div>
-			<p style="text-decoration: underline;" class="display-2 font-weight-bold brown--text text--lighten-2 text-xs-center">เสื้อคลุมอาบน้ำ รังผึ้ง ด็อบบี้</p>
-			<p class="display-1 font-weight-bold purple--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>   ดีไซน์สวย</p>
-			<p class="display-1 font-weight-bold lime--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> ใส่สบาย</p>
-			<p class="display-1 font-weight-bold orange--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>    ผิวสัมผัสนุ่ม</p>
-			<p class="ml-5 mr-5 text-xs-center">เสื้อคลุมของเรามีหลายขนาดให้ลูกค้าเลือกเพื่อให้เหมาะสำหรับโรงแรมและรีสอร์ทที่มีทั้งชาวไทยและชาวต่างชาติอีกทั้งเนื่อผ้าที่มีความหลากหลายอย่างเช่น ลายรังผึ้ง ดอบบี้สีต่างๆ เนื้อผ้าเบาเหมาะสำหรับใส่สบายๆ ตอนเช้าและหลังอาบน้ำ</p>
+			<p style="text-decoration: underline;font-size:40px" class="font-weight-bold brown--text text--lighten-2 text-xs-center">เสื้อคลุมอาบน้ำ รังผึ้งและด็อบบี้</p>
+			<p style="font-size:30px;" class="font-weight-bold purple--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>   ดีไซน์สวย</p>
+			<p style="font-size:30px;" class="font-weight-bold lime--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> ใส่สบาย</p>
+			<p style="font-size:30px;" class="font-weight-bold orange--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>    ผิวสัมผัสนุ่ม</p>
+			<p style="font-size:20px;" class="ml-5 mr-5 text-xs-center">เสื้อคลุมของเรามีหลายขนาดให้ลูกค้าเลือกเพื่อให้เหมาะสำหรับโรงแรมและรีสอร์ทที่มีทั้งชาวไทยและชาวต่างชาติอีกทั้งเนื่อผ้าที่มีความหลากหลายอย่างเช่น ลายรังผึ้ง ดอบบี้สีต่างๆ เนื้อผ้าเบาเหมาะสำหรับใส่สบายๆ ตอนเช้าและหลังอาบน้ำ</p>
 			<v-data-table
 			    :headers="headers"
 			    :items="towels"

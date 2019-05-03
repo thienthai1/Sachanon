@@ -12,10 +12,10 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn to="/" flat class="subheading font-weight-bold">หน้าหลัก</v-btn>
+          <v-btn to="/" flat style="font-family: 'Prompt', sans-serif;font-size:15px" class="subheading font-weight-bold">หน้าหลัก</v-btn>
           <v-menu open-on-hover offset-y>
             <template v-slot:activator="{ on }">
-            <v-btn v-on="on" flat class="subheading font-weight-bold">สินค้า<v-icon dark>arrow_drop_down</v-icon></v-btn>
+            <v-btn v-on="on" style="font-family: 'Prompt', sans-serif;font-size:15px" flat class="font-weight-bold">สินค้า<v-icon dark>arrow_drop_down</v-icon></v-btn>
             </template>
             <v-list>
               <v-list-tile
@@ -23,12 +23,12 @@
                 :key="index"
                 @click=""
               >
-                <v-list-tile-title><router-link class="black--text" style="text-decoration: none;" :to="item.url">{{ item.title }}</router-link></v-list-tile-title>
+                <v-list-tile-title><router-link class="black--text" style="text-decoration: none;font-family: 'Prompt', sans-serif;font-size:15px" :to="item.url">{{ item.title }}</router-link></v-list-tile-title>
               </v-list-tile>
             </v-list>
           </v-menu>
-          <v-btn to="/aboutus" flat class="subheading font-weight-bold">เกี่ยวกับเรา</v-btn>
-          <v-btn to="/contact" flat class="subheading font-weight-bold">ติดต่อ</v-btn>
+          <v-btn to="/aboutus" style="font-family: 'Prompt', sans-serif;font-size:15px" flat class="font-weight-bold">เกี่ยวกับเรา</v-btn>
+          <v-btn style="font-family: 'Prompt', sans-serif;font-size:15px" to="/contact" flat class="font-weight-bold">ติดต่อ</v-btn>
         </v-toolbar-items>
       </v-toolbar>
 
@@ -61,7 +61,7 @@
               <v-icon>home</v-icon>
             </v-list-tile-action>
             <v-list-tile-content class="pr-5">
-              <v-list-tile-title>หน้าหลัก</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">หน้าหลัก</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-group :value="false">
@@ -71,34 +71,34 @@
                   <v-icon>assignment</v-icon>
                 </v-list-tile-action>
               <v-list-tile-content class="pr-5">
-                <v-list-tile-title>สินค้า</v-list-tile-title>
+                <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">สินค้า</v-list-tile-title>
               </v-list-tile-content>  
               </v-list-tile>
             </template>
             <v-list-tile to="/towel" @click="">
               <v-list-tile-action class="pl-4">
               </v-list-tile-action>
-              <v-list-tile-title class="pl-3">ผ้าขนหนู</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px" class="pl-3">ผ้าขนหนู</v-list-tile-title>
             </v-list-tile>
             <v-list-tile to="/bedsheet" @click="">
               <v-list-tile-action class="pl-4">
               </v-list-tile-action>
-              <v-list-tile-title class="pl-3">ผ้าปูที่นอน</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px" class="pl-3">ผ้าปูที่นอน</v-list-tile-title>
             </v-list-tile>
             <v-list-tile to="/bathmat" @click="">
               <v-list-tile-action class="pl-4">
               </v-list-tile-action>
-              <v-list-tile-title class="pl-3">ผ้าเช็ดเท้า</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px" class="pl-3">ผ้าเช็ดเท้า</v-list-tile-title>
             </v-list-tile>
             <v-list-tile to="/pillow" @click="">
               <v-list-tile-action class="pl-4">
               </v-list-tile-action>
-              <v-list-tile-title class="pl-3">ปลอกหมอน</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px" class="pl-3">ปลอกหมอน</v-list-tile-title>
             </v-list-tile>
             <v-list-tile to="/bathrobe" @click="">
               <v-list-tile-action class="pl-4">
               </v-list-tile-action>
-              <v-list-tile-title class="pl-3">เสื้อคลุมอาบน้ำ</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px" class="pl-3">เสื้อคลุมอาบน้ำ</v-list-tile-title>
             </v-list-tile>
           </v-list-group>
           <v-list-tile to="/aboutus" @click="">
@@ -106,7 +106,7 @@
               <v-icon>favorite</v-icon>
             </v-list-tile-action>
             <v-list-tile-content  class="pr-5">
-              <v-list-tile-title>เกี่ยวกับเรา</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">เกี่ยวกับเรา</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile to="/contact" @click="">
@@ -114,7 +114,7 @@
               <v-icon>call</v-icon>
             </v-list-tile-action>
             <v-list-tile-content class="pr-5">
-              <v-list-tile-title>ติดต่อ</v-list-tile-title>
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">ติดต่อ</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
@@ -130,14 +130,12 @@
           tile
         >
           <v-card-title class="teal primary">
-             &copy;2019.—  <strong>Sachanon Textile All Rights Reserved.</strong><br/> 
+            <strong class="primary text-xs-center">&copy;2019.— Sachanon Textile <br/> All Rights Reserved.</strong><br/> 
                         <v-spacer></v-spacer>
-
-            
             
                          <v-spacer></v-spacer>
             
-            <strong class="font-weight-bold"><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp02-463-5085 (คุณเพ็ญ)<br/><img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line:@scntextile</strong>
+            <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>&nbsp&nbsp&nbsp&nbsp&nbsp02-463-5085 (คุณเพ็ญ)<br/><img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line:@scntextile</strong>
           </v-card-title>
     
 <!--           <v-card-actions class="primary">
@@ -151,9 +149,13 @@
 </template>
 
 <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Mitr|Prompt');
   v-app{
     background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/blur-photo-background-3.jpg');
     height: 500px; 
+  },
+  v-btn{
+    font-family: 'Prompt', sans-serif;
   }
 </style>
 
@@ -175,11 +177,7 @@ export default {
         { title: 'ติดต่อ', icon: 'call' }
       ],
       icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-google-plus',
-        'fab fa-linkedin',
-        'fab fa-instagram'
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtoHK5SCWj0gK1v2c6uPMDBgutBnEiD1EqoVlmpQYOYdtu2_IhQ',
       ],
       products: [
         { title: 'ผ้าขนหนู', url: '/towel' },

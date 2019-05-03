@@ -39,11 +39,11 @@
 		</v-flex>
 		<v-flex d-flex xs12 sm6 mt-5>
 			<div>
-			<p style="text-decoration: underline;" class="display-2 font-weight-bold brown--text text--lighten-2 text-xs-center">ผ้าปูที่นอน Cotton100%</p>
-			<p class="display-1 font-weight-bold purple--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> มีหลากหลายไซส์ให้เลือก</p>
-			<p class="display-1 font-weight-bold lime--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>ผ้านุ่มเย็นสบาย</p>
-			<p class="display-1 font-weight-bold orange--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span>เหมาะสำหรับโรงแรม</p>
-			<p class="ml-5 mr-5 text-xs-center">เนื่องด้วยความการสังเกตุและความเข้าใจในตลาดผ้าปูในปัจจุบัน เราจึงเน้นผลิดผ้าปูที่มีความนุ่มสบาย ทอด้วยผ้า Cotton 250 เส้นต่อตารางนิ้ว ซึ่งเหมาะสำหรับใช้ในโรงแรม ขนาดเล็กไปถึงขนาดใหญ่ สินค้าของเรามีหลากหลายลายให้เลือก เช่น ลายริ้ว ลายเรียบ ลายริ้วเล็ก ลายริ้วใหญ่ และ ลายตาราง นอกจากนี้ เรายังรับตัดขนาดผ้าปูตามความให้เป็นไปตามความต้องการของลูกค้า</p>
+			<p style="text-decoration: underline;font-size:40px" class="font-weight-bold brown--text text--lighten-2 text-xs-center">ผ้าปูที่นอน Cotton100%</p>
+			<p style="font-size:30px" class="font-weight-bold purple--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> มีหลากหลายไซส์ให้เลือก</p>
+			<p style="font-size:30px" class="font-weight-bold lime--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> ผ้านุ่มเย็นสบาย</p>
+			<p style="font-size:30px" class="font-weight-bold orange--text text--darken-1 text-xs-center"><span><img height="20px" width="20px" src="https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676__340.png" /></span> เหมาะสำหรับโรงแรมและรีสอร์ท</p>
+			<p style="font-size:20px" class="ml-5 mr-5 text-xs-center">เนื่องด้วยการสังเกตุและความเข้าใจในตลาดผ้าปูในปัจจุบัน เราจึงเน้นผลิตผ้าปูที่มีความนุ่มสบาย ทอด้วยผ้า Cotton 250 เส้นต่อตารางนิ้ว ซึ่งเหมาะสำหรับใช้ในโรงแรม ขนาดเล็กไปถึงขนาดใหญ่ลูกค้าสามารถเลือกลายตามความต้องการของลูกค้าได้เช่น ลายเรียบ ลายริ้วเล็ก ลายริ้วใหญ่ และ ลายตารางนอกจากนี้ลูกค้าสามารถสั่งตัดขนาดผ้าปูตามความต้องการของลูกค้าได้</p>
 			<v-data-table
 			    :headers="headers"
 			    :items="towels"
