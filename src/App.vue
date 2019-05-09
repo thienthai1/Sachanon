@@ -130,8 +130,10 @@
           tile
         >
           <v-card-title class="teal primary">
-            <strong class="primary text-xs-center">&copy;2019.— Sachanon Textile <br/> All Rights Reserved.</strong><br/> 
+            <img class="mb-3" height="100px" :src="require('./assets/qr_code.jpg')" />
                         <v-spacer></v-spacer>
+
+            <strong class="primary text-xs-center">&copy;2019.— Sachanon Textile <br/> All Rights Reserved.</strong><br/> 
             
                          <v-spacer></v-spacer>
             
