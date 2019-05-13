@@ -66,7 +66,7 @@
           </v-list-tile>
           <v-list-group :value="false">
             <template v-slot:activator>
-              <v-list-tile @click="">
+              <v-list-tile>
                 <v-list-tile-action class="pl-3">
                   <v-icon>assignment</v-icon>
                 </v-list-tile-action>
