@@ -146,10 +146,10 @@ import VueEasyLightbox from 'vue-easy-lightbox'
         	{
         		text: 'ขนาด',
         		align: 'left',
-        		sortable: true,
+        		sortable: false,
         		value: 'name'
         	},
-        	{ text: 'น้ำหนัก', weight: 'weight'}
+        	{ text: 'น้ำหนัก', weight: 'weight', sortable: false}
         ],
       	imgs: '',
       	index: 0,

@@ -42,6 +42,7 @@
         absolute
         grey
         temporary
+        dark
         
       >
         <v-list class="pa-1">

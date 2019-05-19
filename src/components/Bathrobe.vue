@@ -115,7 +115,7 @@ import VueEasyLightbox from 'vue-easy-lightbox'
         		sortable: false,
         		value: 'name'
         	},
-        	{ text: 'ลาย', weight: 'weight'}
+        	{ text: 'ลาย', weight: 'weight', sortable: false}
         ],
         imgs: '',
         index: 0,
