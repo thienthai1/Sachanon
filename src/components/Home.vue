@@ -44,22 +44,17 @@
         </v-flex>
       </v-layout>
     <v-divider class="my-3"></v-divider>
-      <v-layout align-center>
+      <v-layout row wrap align-center>
         <v-flex d-flex xs12 sm6>
-          <h1 class="grey--text text--darken-1" style="font-size:30px">
-            "วิธีการเลือกซื้อ ผ้าปูที่นอนผ้าขนหนูสำหรับผู้ประกอบกิจการโรงแรม"
-          </h1>
+          <v-card height="220" elevation="15" class=" ml-5 mr-5 blue darken-22">
+              <v-card-title primary-title>
+                  <div style="font-family: 'Prompt', sans-serif;font-size:25px;" class=" mt-4 white--text text--darken-2">
+                    "วิธีการเลือกซื้อ ผ้าปูที่นอนผ้าขนหนูสำหรับผู้ประกอบกิจการโรงแรม"
+                  </div>
+              </v-card-title>
+          </v-card>
         </v-flex>
-        <v-flex xs12 sm6>
-          <!-- <iframe 
-            width="50%" 
-            height="300" 
-            src="https://www.youtube.com/embed/oRTFGTgPFME?start=4" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe> -->
-          <!-- <v-card elevation="24"> -->
+        <v-flex xs12 sm6 class="mt-3">
               <iframe 
             width="100%" 
             height="300" 
