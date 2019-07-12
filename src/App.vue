@@ -42,6 +42,7 @@
         absolute
         grey
         temporary
+        dark
         
       >
         <v-list class="pa-1">
@@ -66,7 +67,7 @@
           </v-list-tile>
           <v-list-group :value="false">
             <template v-slot:activator>
-              <v-list-tile @click="">
+              <v-list-tile>
                 <v-list-tile-action class="pl-3">
                   <v-icon>assignment</v-icon>
                 </v-list-tile-action>
@@ -130,12 +131,17 @@
           tile
         >
           <v-card-title class="teal primary">
-            <strong class="primary text-xs-center">&copy;2019.— Sachanon Textile <br/> All Rights Reserved.</strong><br/> 
+            <img class="mb-3" height="100px" :src="require('./assets/qr_code.jpg')" />
                         <v-spacer></v-spacer>
+
+            <strong class="primary text-xs-center">&copy;2019.— Sachanon Textile <br/> All Rights Reserved.</strong><br/> 
             
                          <v-spacer></v-spacer>
             
-            <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>&nbsp&nbsp&nbsp&nbsp&nbsp02-463-5085 (คุณเพ็ญ)<br/><img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line:@scntextile</strong>
+            <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>&nbsp&nbsp&nbsp&nbsp&nbsp02-463-5085 (คุณเพ็ญ)<br/>
+            <img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line: @scntextile<br/>
+            <img class="mt-1" height="22px" width="22px" src="http://www.iconarchive.com/download/i43972/custom-icon-design/pretty-social-media-2/Email.ico" />  Email: sachanontextile1@gmail.com
+            </strong>
           </v-card-title>
     
 <!--           <v-card-actions class="primary">

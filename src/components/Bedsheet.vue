@@ -168,8 +168,8 @@ import VueEasyLightbox from 'vue-easy-lightbox'
         		sortable: false,
         		value: 'name'
         	},
-        	{ text: 'ขนาดเส้น', value: 'size'},
-          { text: 'ลาย', value: 'texture'}
+        	{ text: 'ขนาดเส้น', value: 'size',sortable: false},
+          { text: 'ลาย', value: 'texture',sortable: false}
         ],
         imgs: '',
         index: 0,
