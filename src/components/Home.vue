@@ -274,7 +274,7 @@
                     เสื้อคลุมของเรามีหลายขนาดให้ลูกค้าเลือกเพื่อให้เหมาะสำหรับโรงแรมและรีสอร์ทที่มีทั้งชาวไทยและชาวต่างชาติอีกทั้งเนื่อผ้าที่มีความหลากหลายอย่างเช่น ลายรังผึ้ง ดอบบี้สีต่างๆ เนื้อผ้าเบาเหมาะสำหรับใส่สบายๆ ตอนเช้าและหลังอาบน้ำ
             </p>
             <div class="text-xs-center">
-              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/batrobe" small color="primary">ดูเพิ่มเติม</v-btn>
+              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/bathrobe" small color="primary">ดูเพิ่มเติม</v-btn>
             </div>
             </v-card>
           </div>
