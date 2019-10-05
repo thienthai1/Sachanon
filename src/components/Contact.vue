@@ -33,7 +33,7 @@
 	  		<h1 style="text-decoration: underline;" class="brown--text text--lighten-2">ที่อยู่</h1>
 	  		<p style="font-size:20px;">เลขที่ 43 หมู่ 6 ซอยสุขสวัสดิ์ 70/4 ตำบลบางครุ อำเภอ พระประประแดง จังหวัดสมุทรปราการ 10130</p>
 	  		<h1 style="text-decoration: underline;" class="brown--text text--lighten-2">โทรศัพท์</h1>
-	  		<p style="font-size:20px;"><span><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" /></span> ฝ่ายขาย: 089-788-5439, 085-755-8581 (คุณหมู) 02-463-5085 (คุณเพ็ญ) 081-988-4040 (คุณฝน)<br/>
+	  		<p style="font-size:20px;"><span><img height="20px" width="20px" src="http://www.logospng.com/images/12/original-lrm-svg-nominally-256-215-pixels-12481.png" /></span> ฝ่ายขาย: 089-788-5439, 085-755-8581 (คุณหมู)<br/>
 				<span><img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" /></span>  Line: @scntextile<br/>
 				<span><img height="22px" width="22px" src="http://www.iconarchive.com/download/i43972/custom-icon-design/pretty-social-media-2/Email.ico" /></span>  Email: sachanontextile1@gmail.com
 				</p>
