@@ -13,7 +13,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "i": "^0.3.6",
     "lingallery": "^1.1.25",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "vue": "^2.6.6",
     "vue-easy-lightbox": "^0.3.10",
     "vue-router": "^3.0.2",
