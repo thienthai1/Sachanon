@@ -1,11 +1,4 @@
 <template>
-  <!-- <v-app 
-  style="background-image: url('http://www.so-gentlemen.be/fr/wp-content/uploads/2019/01/rafael-hotels-by-la-pleta-home-occitania-spa-3.jpg');height: 100%;  
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;"
-  > -->
     <v-app v-bind:style="{ 
       backgroundImage: 'url(' + require('./assets/backGround.jpg') + ')'}"
       style="
@@ -167,10 +160,6 @@
 
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css?family=Mitr|Prompt');
-  v-app{
-    background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/blur-photo-background-3.jpg');
-    height: 500px; 
-  },
   v-btn{
     font-family: 'Prompt', sans-serif;
   }
@@ -192,9 +181,6 @@ export default {
         { title: 'สินค้า', icon: 'assignment' },
         {title: 'เกี่ยวกับเรา', icon: 'favorite'},
         { title: 'ติดต่อ', icon: 'call' }
-      ],
-      icons: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtoHK5SCWj0gK1v2c6uPMDBgutBnEiD1EqoVlmpQYOYdtu2_IhQ',
       ],
       products: [
         { title: 'ผ้าขนหนู', url: '/towel' },
