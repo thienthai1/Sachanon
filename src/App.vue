@@ -1,9 +1,20 @@
 <template>
-  <v-app style="background-image: url('http://www.so-gentlemen.be/fr/wp-content/uploads/2019/01/rafael-hotels-by-la-pleta-home-occitania-spa-3.jpg');height: 100%;  
+  <!-- <v-app 
+  style="background-image: url('http://www.so-gentlemen.be/fr/wp-content/uploads/2019/01/rafael-hotels-by-la-pleta-home-occitania-spa-3.jpg');height: 100%;  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;">
+  background-size: cover;"
+  > -->
+    <v-app v-bind:style="{ 
+      backgroundImage: 'url(' + require('./assets/backGround.jpg') + ')'}"
+      style="
+      height: 100%;  
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;"
+    >
       <v-toolbar dark color="primary">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title  to="/" class="white--text text--darken-1 headline font-weight-medium">Sachanon <span class="light-green--text font-weight-bold">Textile</span></v-toolbar-title>
@@ -138,9 +149,9 @@
             
                          <v-spacer></v-spacer>
             
-            <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="22px" width="22px" src="http://www.myiconfinder.com/uploads/iconsets/256-256-12918a9f351955eb3242ce0e52198993.png" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>
-            <img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line: @scntextile<br/>
-            <img class="mt-1" height="22px" width="22px" src="http://www.iconarchive.com/download/i43972/custom-icon-design/pretty-social-media-2/Email.ico" />  Email: sachanontextile1@gmail.com
+            <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="22px" :src="require('./assets/call.png')" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>
+            <img height="20px" width="20px" :src="require('./assets/line.png')" />  Line: @scntextile<br/>
+            <img class="mt-1" height="22px" width="22px" :src="require('./assets/mail.png')" />  Email: sachanontextile1@gmail.com
             </strong>
           </v-card-title>
     

@@ -366,15 +366,15 @@ import towel from "../assets/bath_towel-84.jpg"
         ],
         lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,
         customers: [
-          { title: 'โรงแรมเอส48 เชียงไหม่', url: 'https://pix10.agoda.net/hotelImages/195/1952889/1952889_17020209220050720599.jpg?s=1024x768' },
-          { title: 'โอโซนวิลล่า ภูเก็ต', url: 'https://scontent.fbkk2-8.fna.fbcdn.net/v/t31.0-8/23334112_1926546377595661_669979532505147864_o.jpg?_nc_cat=105&_nc_oc=AQnYBYUWUyDQlG7hY2-kTP_44j4KJJQcnqjD-r857SuQrr786JATVGNamZQA5-LwEAs&_nc_ht=scontent.fbkk2-8.fna&oh=1bab4a49bf182cd59d8433f25619a394&oe=5E38FA53' },
-          { title: 'โรงแรมนภาลัย อุดรธานี', url: 'https://pix10.agoda.net/hotelImages/247/247582/247582_15072415200032977054.jpg?s=1024x768'},
-          { title: 'เจมทรีบูติค ลำปาง', url: 'https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002100585620_wh_12' },
-          { title: 'Kata Bella Resort Phuket', url: 'http://www.zeus.travel/pr_img/1240100354/20131206/2803923207/17234051004337767.jpg'},
-          { title: 'SN Plus Hotel Pattaya', url: 'https://d3okp60r9juh9v.cloudfront.net/hotel/cb980-5658327685e0e040516e43cd/Exterior-SN-Plus-Hotel-Pattaya_l.jpg'},
-          { title: 'ตำนานป่ารีสอร์ท ระยอง', url: 'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_470,q_auto,w_805/uploadimages/34/14/34142330.jpeg'},
-          { title: 'Asura Resort เกาะลันตา', url: 'https://pix10.agoda.net/hotelImages/5793622/-1/2083fe8ab607f6df0e3710d9b514ad6a.jpg?s=1024x768'},
-          { title: 'เวียงตากริเวอร์ไซด์ ตาก', url: 'https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000504838_wh_2'}
+          { title: 'โรงแรมเอส48 เชียงไหม่', url: require('../assets/s48.jpg') },
+          { title: 'โอโซนวิลล่า ภูเก็ต', url: require('../assets/ozonevilla.jpg') },
+          { title: 'โรงแรมนภาลัย อุดรธานี', url: require('../assets/napalai.jpg') },
+          { title: 'เจมทรีบูติค ลำปาง', url: require('../assets/gemTree.jpg') },
+          { title: 'Kata Bella Resort Phuket', url: require('../assets/kataBella.jpg')},
+          { title: 'SN Plus Hotel Pattaya', url: require('../assets/snPlus.jpeg') },
+          { title: 'ตำนานป่ารีสอร์ท ระยอง', url: require('../assets/tamNanpa.jpg')},
+          { title: 'Asura Resort เกาะลันตา', url: require('../assets/asura.jpg')},
+          { title: 'เวียงตากริเวอร์ไซด์ ตาก', url: require('../assets/wiengTak.jpg') }
         ]
       }
     }
