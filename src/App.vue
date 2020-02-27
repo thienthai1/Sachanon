@@ -144,7 +144,7 @@
             
             <strong style="font-family: 'Prompt', sans-serif;font-size:14px"><img height="20px" width="20px" :src="require('./assets/call.png')" />  ติดต่อ โทร: 089-788-5439, 085-755-8581 (คุณหมู)<br/>&nbsp&nbsp&nbsp&nbsp&nbsp02-463-5085 (คุณเพ็ญ)<br/>
             <img height="20px" width="20px" src="http://thinkanddothailand.com/wp-content/uploads/2016/03/LINE-Free-Calls-Messages-Icon.png" />  Line: @scntextile<br/>
-            <img class="mt-1" height="22px" width="22px" src="http://www.iconarchive.com/download/i43972/custom-icon-design/pretty-social-media-2/Email.ico" />  Email: sachanontextile1@gmail.com
+            <img class="mt-1" height="22px" width="22px" src="http://www.iconarchive.com/download/i43972/custom-icon-design/pretty-social-media-2/Email.ico" />  Email: sachanontextile4@gmail.com
             </strong>
           </v-card-title>
     
