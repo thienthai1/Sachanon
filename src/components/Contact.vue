@@ -35,7 +35,7 @@
 	  		<h1 style="text-decoration: underline;" class="brown--text text--lighten-2">โทรศัพท์</h1>
 	  		<p style="font-size:20px;"><span><img height="20px" width="20px" :src="require('../assets/call.png')" /></span> ฝ่ายขาย: 089-788-5439, 085-755-8581 (คุณหมู)<br/>
 				<span><img height="20px" width="20px" :src="require('../assets/line.png')" /></span>  Line: @scntextile<br/>
-				<span><img height="22px" width="22px" :src="require('../assets/mail.png')" /></span>  Email: sachanontextile1@gmail.com
+				<span><img height="22px" width="22px" :src="require('../assets/mail.png')" /></span>  Email: sachanontextile4@gmail.com
 				</p>
 	  		<v-divider class="my-5"></v-divider>
 	  		</div>
