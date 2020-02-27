@@ -15,7 +15,7 @@
                     width=100%
                   >
 
-                  <template v-slot:placeholder>
+                  <!--<template v-slot:placeholder>
                     <v-layout
                       fill-height
                       align-center
@@ -24,7 +24,7 @@
                     >
                       <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                     </v-layout>
-                  </template>
+                  </template> -->
 
                   </v-img>
  
@@ -144,7 +144,7 @@
                     class="grey lighten-2"
                   >
 
-                  <template v-slot:placeholder>
+                  <!--<template v-slot:placeholder>
                     <v-layout
                       fill-height
                       align-center
@@ -153,7 +153,7 @@
                     >
                       <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                     </v-layout>
-                  </template>
+                  </template> -->
 
                   </v-img>
             </v-flex>
@@ -224,7 +224,7 @@
                     class="grey lighten-2"
                   >
                     
-                  <template v-slot:placeholder>
+                  <!--<template v-slot:placeholder>
                     <v-layout
                       fill-height
                       align-center
@@ -233,7 +233,7 @@
                     >
                       <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                     </v-layout>
-                  </template>
+                  </template> -->
 
                   </v-img>
             </v-flex>
@@ -251,7 +251,7 @@
                     class="grey lighten-2"
                   >
                     
-                  <template v-slot:placeholder>
+                  <!--<template v-slot:placeholder>
                     <v-layout
                       fill-height
                       align-center
@@ -260,7 +260,7 @@
                     >
                       <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                     </v-layout>
-                  </template>
+                  </template> -->
 
                   </v-img>
             </v-flex>
@@ -309,7 +309,7 @@
                   aspect-ratio="1"
                   class="grey lighten-2 black--text"
                 >
-                  <template v-slot:placeholder>
+                  <!--<template v-slot:placeholder>
                     <v-layout
                       fill-height
                       align-center
@@ -318,7 +318,7 @@
                     >
                       <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                     </v-layout>
-                  </template>
+                  </template> -->
               <v-container fill-height fluid>
                   <v-layout fill-height>
                     <v-flex xs12 align-end flexbox>
@@ -374,7 +374,8 @@ import towel from "../assets/bath_towel-84.jpg"
           { title: 'SN Plus Hotel Pattaya', url: require('../assets/snPlus.jpeg') },
           { title: 'ตำนานป่ารีสอร์ท ระยอง', url: require('../assets/tamNanpa.jpg')},
           { title: 'Asura Resort เกาะลันตา', url: require('../assets/asura.jpg')},
-          { title: 'เวียงตากริเวอร์ไซด์ ตาก', url: require('../assets/wiengTak.jpg') }
+          { title: 'เวียงตากริเวอร์ไซด์ ตาก', url: require('../assets/wiengTak.jpg') },
+          { title: 'The Loft Hillside เชียงไหม่', url: require('../assets/theLoft.jpg') }
         ]
       }
     }

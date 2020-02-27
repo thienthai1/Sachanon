@@ -11,7 +11,7 @@
       <v-toolbar dark color="primary">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title  to="/" class="white--text text--darken-1 headline font-weight-medium">Sachanon <span class="light-green--text font-weight-bold">Textile</span></v-toolbar-title>
-        <img src="./assets/leaves.png" alt="Smiley face" height="35" width="35">
+        
 
         <v-spacer></v-spacer>
 
