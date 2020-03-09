@@ -1,37 +1,32 @@
 <template>
   <v-container class="grey lighten-4" style="opacity=0.5;">
-    <v-layout>
-      <v-carousel>
-        <v-carousel-item
-          v-for="(item,i) in slides"
-          :key="i"
-        >
-          
-                  <v-img
-                    :src="item.src"
-                    class="grey lighten-2"
-                    position="50% 50%"
-                    height=100%
-                    width=100%
-                  >
-
-                  <!--<template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
+        <v-carousel class="hidden-xs-only">
+          <v-carousel-item
+            v-for="(item,i) in slides"
+            :key="i"
+          >
+            
+                    <v-img
+                      :src="item.src"
+                      position="50% 50%"
+                      height=100%
+                      width=100%
                     >
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-                  </template> -->
 
-                  </v-img>
- 
+                    <template v-slot:placeholder>
+                      <v-layout
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                      >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                      </v-layout>
+                    </template>
 
-        </v-carousel-item>
-      </v-carousel>
-    </v-layout>
+                    </v-img>
+          </v-carousel-item>
+        </v-carousel>
     <v-divider class="my-3"></v-divider>
        <v-layout align-center>
         <v-flex>
@@ -47,11 +42,12 @@
       </v-layout>
     <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
-        <v-flex d-flex xs12 sm6>
-          <v-card elevation="15" class=" ml-5 mr-5 blue darken-22">
+        <v-flex xs12 sm6>
+          <div class="d-flex hidden-xs-only">
+              <v-card elevation="15" class="ml-1 mr-3 blue darken-22">
               <v-card-title primary-title>
                   <div style="font-family: 'Prompt', sans-serif;font-size:25px;" class="mb-4 mt-4 white--text text--darken-2">
-                    "วิธีการเลือกซื้อ ผ้าปูที่นอนผ้าขนหนูสำหรับผู้ประกอบกิจการโรงแรม"<br/>
+                    " วิธีการเลือกซื้อ ผ้าปูที่นอนผ้าขนหนูสำหรับผู้ประกอบกิจการโรงแรม "<br/>
                   <span style="font-size:18px;">
                     การเลือกซื้อผ้าปูและผ้าเช็ดตัวหรับใช้ในกิจการโรงแรมเป็นทั้งศาสตร์และศิลป์ที่จำเพาะเจาะจงในแต่ละแบบของธุรกิจ 
                     ความนุ่มและความคุ้มค่าก็เป็นสิ่งที่สำคัญในการตัดสินใจวิดิโอนี้จะช่วย
@@ -59,7 +55,22 @@
                   </span>
                   </div>
               </v-card-title>
-          </v-card>
+              </v-card>
+            </div>
+           <div class="d-flex hidden-sm-and-up">
+              <v-card elevation="15" class="xs-12 blue darken-22">
+              <v-card-title primary-title>
+                  <div style="font-family: 'Prompt', sans-serif;font-size:25px;" class="mb-4 mt-4 white--text text--darken-2">
+                    " วิธีการเลือกซื้อ ผ้าปูที่นอนผ้าขนหนูสำหรับผู้ประกอบกิจการโรงแรม "<br/>
+                  <span style="font-size:18px;">
+                    การเลือกซื้อผ้าปูและผ้าเช็ดตัวหรับใช้ในกิจการโรงแรมเป็นทั้งศาสตร์และศิลป์ที่จำเพาะเจาะจงในแต่ละแบบของธุรกิจ 
+                    ความนุ่มและความคุ้มค่าก็เป็นสิ่งที่สำคัญในการตัดสินใจวิดิโอนี้จะช่วย
+                    ตอบคำถามและให้ความรู้เบื้องต้นสำหรับนักธุรกิจและผู้ซื้อเพื่อช่วยเพิ่มความมั่นใจในการเลือกซื้อสินค้า
+                  </span>
+                  </div>
+              </v-card-title>
+              </v-card>
+            </div>
         </v-flex>
         <v-flex xs12 sm6 class="mt-3">
               <iframe 
