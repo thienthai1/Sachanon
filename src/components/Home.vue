@@ -31,7 +31,12 @@
        <v-layout align-center>
         <v-flex>
           <v-card elevation="7">
-          <h3 style="text-decoration: underline;font-family: 'Mitr', sans-serif;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
+          <div class="d-flex hidden-xs-only">
+            <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
+          </div>
+          <div class="d-flex hidden-sm-and-up">
+            <h3 style="text-decoration: underline;font-size:38px;" class="pt-3 text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
+          </div>
           <v-card-text style="text-align: justify;font-family: 'Prompt', sans-serif;font-size:18px;" class="text-xs-center font-italic pt-1 green--text text--darken-2 font-weight-bold">
 <!--             "ผ้าโรงงานของเราประกอบไปด้วย ผ้าขนหนูหลากหลายประเภทไม่ว่าจะเป็น ผ้าเช็ดตัว ผ้าขนหนูพรีเมี่ยม ผ้าเช็ดหน้า ผ้าเช็ดผม ผ้าสำหรับเป็นของชำร่วยให้ลูกค้าผ้าสำหรับธุรกิจสปาและโรงแรม รวมถึง ผ้าขนหนูรับไหว้สำหรับงานแต่งงานแบบต่างๆ" -->
                   "เราผลิตและจำหน่ายสินค้าเช่น ผ้าขนหนู ผ้าเช็ดผม ผ้าเช็ดมือ ผ้าปู เครื่องนอน เกรดพรีเมี่ยมสำหรับ โรงแรม รีสอร์ท สปา และสามารถใช้สำหรับเป็นของชำร่วยเพื่อแจกในงานและโอกาสต่างๆได้ เรารับประกันคุณภาพการทำงานกว่า 10 ปีคัดสรรสิ่งที่ดีที่สุดสำหรับลูกค้าทุกท่าน"
@@ -118,24 +123,46 @@
           </v-layout>
         </v-flex>
         <v-flex d-flex xs12 sm7>
-          <div class="text-xs-center">
-            <v-card elevation="15" class="mt-3 ml-4 px-3 pt-1">
-            <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าขนหนู</h1>
-            <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
-                    ผ้าขนหนูที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ 
-            </p>
-            <div class="text-xs-center">
-              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/towel" small color="primary">ดูเพิ่มเติม</v-btn>
+            <div class="text-xs-center d-flex hidden-xs-only">
+              <v-card elevation="15" class="mt-3 ml-4 px-3 pt-1">
+              <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าขนหนู</h1>
+              <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                      ผ้าขนหนูที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ 
+              </p>
+              <div class="text-xs-center">
+                <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/towel" small color="primary">ดูเพิ่มเติม</v-btn>
+              </div>
+              </v-card>
             </div>
-            </v-card>
-          </div>
+            <div class="text-xs-center d-flex hidden-sm-and-up">
+              <v-card elevation="15" class="mt-3 px-3 pt-1">
+              <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าขนหนู</h1>
+              <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                      ผ้าขนหนูที่ดีควรมีคุณสมบัติที่สามารถซับน้ำได้ดีซักแล้วไม่เป็นขุย คุณภาพขนก็เป็นสิ่งที่สำคัญ ผ้าขนหนูคุณภาพสูงส่วนใหญ่จะใช้ผ้าขนคู่เป็นหลักเนื่อจากผ้ามีอายุการใช้งานได้ยาวนาน ผ้าของเราจะเน้นเป็นผ้าขนคู่ Cotton 100% เราจำหน่าย สินค้าผ้าขนหนูหลายขนาด สำหรับใช้ในกิจกรรมต่างๆเช่น ผ้าเช็ดตัว ผ้าเช็ดผม ผ้าเช็ดมือ 
+              </p>
+              <div class="text-xs-center">
+                <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/towel" small color="primary">ดูเพิ่มเติม</v-btn>
+              </div>
+              </v-card>
+            </div>
         </v-flex>
       </v-layout>
       <v-divider class="my-3"></v-divider>
       <v-layout row wrap>
           <v-flex d-flex xs12 sm7 child-flex>
-          <div class="text-xs-center">
-            <v-card elevation="15" class="px-3 pt-1 mr-3 mb-3">
+            <div class="text-xs-center d-flex hidden-xs-only">
+              <v-card elevation="15" class="px-3 pt-1 mr-3 mb-3">
+              <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าปูที่นอน</h1>
+              <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                      เนื่องด้วยการสังเกตุและความเข้าใจในตลาดผ้าปูในปัจจุบัน เราจึงเน้นผลิตผ้าปูที่มีความนุ่มสบาย ทอด้วยผ้า Cotton 250 เส้นต่อตารางนิ้ว ซึ่งเหมาะสำหรับใช้ในโรงแรม ขนาดเล็กไปถึงขนาดใหญ่ลูกค้าสามารถเลือกลายตามความต้องการของลูกค้าได้เช่น ลายเรียบ ลายริ้วเล็ก ลายริ้วใหญ่ และ ลายตารางนอกจากนี้ลูกค้าสามารถสั่งตัดขนาดผ้าปูตามความต้องการของลูกค้าได้ 
+              </p>
+              <div class="text-xs-center">
+                <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/bedsheet" small color="primary">ดูเพิ่มเติม</v-btn>
+              </div>
+              </v-card>
+            </div>
+          <div class="text-xs-center d-flex hidden-sm-and-up">
+            <v-card elevation="15" class="px-3 pt-1 mb-3">
             <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าปูที่นอน</h1>
             <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
                     เนื่องด้วยการสังเกตุและความเข้าใจในตลาดผ้าปูในปัจจุบัน เราจึงเน้นผลิตผ้าปูที่มีความนุ่มสบาย ทอด้วยผ้า Cotton 250 เส้นต่อตารางนิ้ว ซึ่งเหมาะสำหรับใช้ในโรงแรม ขนาดเล็กไปถึงขนาดใหญ่ลูกค้าสามารถเลือกลายตามความต้องการของลูกค้าได้เช่น ลายเรียบ ลายริ้วเล็ก ลายริ้วใหญ่ และ ลายตารางนอกจากนี้ลูกค้าสามารถสั่งตัดขนาดผ้าปูตามความต้องการของลูกค้าได้ 
@@ -198,8 +225,19 @@
           </v-layout>
         </v-flex>
         <v-flex d-flex xs12 sm7 child-flex>
-          <div class="text-xs-center">
+          <div class="text-xs-center d-flex hidden-xs-only">
             <v-card elevation="15" class="mt-3 ml-4 px-3 pt-1">
+            <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าเช็ดเท้า</h1>
+            <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                    ผ้าเช็ดเท้าเป็นส่วนหนึ่งของ เฟอร์นิเจอร์ที่มีความสำคัญไม่แพ้กับอย่างอื่น คุณภาพที่สำคัญสำหรับผ้าเช็ดเท้าคือควรซับน้ำได้ดีและสามารถกันการลื่นได้ ผ้าเช็ดเท้าของเรามีหลายสีและ หลายลาย ตามความต้องการของลูกค้า เช่น ลายหยดน้ำ ลาย welcome และ ลายขอบ การเลือกซื้อผ้าเช็ดเท้าที่ดีสามารถเปลี่ยนอารมณ์และบรรยากาศห้องของคุณได้อย่างมีนัยสำคัญ 
+            </p>
+            <div class="text-xs-center">
+              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/bathmat" small color="primary">ดูเพิ่มเติม</v-btn>
+            </div>
+            </v-card>
+          </div>
+          <div class="text-xs-center d-flex hidden-sm-and-up">
+            <v-card elevation="15" class="mt-3 px-3 pt-1">
             <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ผ้าเช็ดเท้า</h1>
             <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
                     ผ้าเช็ดเท้าเป็นส่วนหนึ่งของ เฟอร์นิเจอร์ที่มีความสำคัญไม่แพ้กับอย่างอื่น คุณภาพที่สำคัญสำหรับผ้าเช็ดเท้าคือควรซับน้ำได้ดีและสามารถกันการลื่นได้ ผ้าเช็ดเท้าของเรามีหลายสีและ หลายลาย ตามความต้องการของลูกค้า เช่น ลายหยดน้ำ ลาย welcome และ ลายขอบ การเลือกซื้อผ้าเช็ดเท้าที่ดีสามารถเปลี่ยนอารมณ์และบรรยากาศห้องของคุณได้อย่างมีนัยสำคัญ 
@@ -214,15 +252,26 @@
       <v-divider class="my-3"></v-divider>
       <v-layout row wrap>
           <v-flex d-flex xs12 sm7 child-flex>
-          <div class="text-xs-center">
-            <v-card elevation="15" class="px-3 pt-1 mr-3 mb-3">
-            <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ปลอกหมอน</h1>
-            <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
-                    ปลอกหมอนเป็นสิ่งที่สำคัญอย่างมากในการการจัดเซ็ตเครื่องนอนของคุณ การเลือกสีให้เหมาะกับผ้าปูบางครั้งเป็นเรื่องที่ท้าทายเราจึงมีปลอกหมอนหลายเฉดสีและหลายลายให้ลูกค้าเลือก สินค้าของเราผลิตจาก Cotton 100% 250เส้น ซึ่งทำให้เนื่อผ้ามีความนุ่มสบายเวลานอนและเหมาะสำหรับใช้ในโรงแรมและรีสอร์ท 
-            </p>
-            <div class="text-xs-center">
-              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/pillow" small color="primary">ดูเพิ่มเติม</v-btn>
-            </div>
+            <div class="text-xs-center d-flex hidden-xs-only">
+              <v-card elevation="15" class="px-3 pt-1 mr-3 mb-3">
+              <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ปลอกหมอน</h1>
+              <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                      ปลอกหมอนเป็นสิ่งที่สำคัญอย่างมากในการการจัดเซ็ตเครื่องนอนของคุณ การเลือกสีให้เหมาะกับผ้าปูบางครั้งเป็นเรื่องที่ท้าทายเราจึงมีปลอกหมอนหลายเฉดสีและหลายลายให้ลูกค้าเลือก สินค้าของเราผลิตจาก Cotton 100% 250เส้น ซึ่งทำให้เนื่อผ้ามีความนุ่มสบายเวลานอนและเหมาะสำหรับใช้ในโรงแรมและรีสอร์ท 
+              </p>
+              <div class="text-xs-center">
+                <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/pillow" small color="primary">ดูเพิ่มเติม</v-btn>
+              </div>
+            </v-card>
+          </div>
+            <div class="text-xs-center d-flex hidden-sm-and-up">
+              <v-card elevation="15" class="px-3 pt-1 mb-3">
+              <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">ปลอกหมอน</h1>
+              <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                      ปลอกหมอนเป็นสิ่งที่สำคัญอย่างมากในการการจัดเซ็ตเครื่องนอนของคุณ การเลือกสีให้เหมาะกับผ้าปูบางครั้งเป็นเรื่องที่ท้าทายเราจึงมีปลอกหมอนหลายเฉดสีและหลายลายให้ลูกค้าเลือก สินค้าของเราผลิตจาก Cotton 100% 250เส้น ซึ่งทำให้เนื่อผ้ามีความนุ่มสบายเวลานอนและเหมาะสำหรับใช้ในโรงแรมและรีสอร์ท 
+              </p>
+              <div class="text-xs-center">
+                <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/pillow" small color="primary">ดูเพิ่มเติม</v-btn>
+              </div>
             </v-card>
           </div>
         </v-flex>
@@ -278,8 +327,19 @@
           </v-layout>
         </v-flex>
         <v-flex d-flex xs12 sm7 child-flex>
-          <div class="text-xs-center">
+          <div class="text-xs-center d-flex hidden-xs-only">
             <v-card elevation="15" class="mt-3 ml-4 px-3 pt-1">
+            <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">เสื้อคลุม</h1>
+            <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
+                    เสื้อคลุมของเรามีหลายขนาดให้ลูกค้าเลือกเพื่อให้เหมาะสำหรับโรงแรมและรีสอร์ทที่มีทั้งชาวไทยและชาวต่างชาติอีกทั้งเนื่อผ้าที่มีความหลากหลายอย่างเช่น ลายรังผึ้ง ดอบบี้สีต่างๆ เนื้อผ้าเบาเหมาะสำหรับใส่สบายๆ ตอนเช้าและหลังอาบน้ำ
+            </p>
+            <div class="text-xs-center">
+              <v-btn class="mb-3" style="font-family: 'Prompt', sans-serif;" to="/bathrobe" small color="primary">ดูเพิ่มเติม</v-btn>
+            </div>
+            </v-card>
+          </div>
+          <div class="text-xs-center d-flex hidden-sm-and-up">
+            <v-card elevation="15" class="mt-3 px-3 pt-1">
             <h1 style="text-decoration: underline;" class="mb-2 text-xs-center blue--text text--darken-2 mt-3">เสื้อคลุม</h1>
             <p class="text-xs-center font-weight-bold subheading brown--text text--darken-2">
                     เสื้อคลุมของเรามีหลายขนาดให้ลูกค้าเลือกเพื่อให้เหมาะสำหรับโรงแรมและรีสอร์ทที่มีทั้งชาวไทยและชาวต่างชาติอีกทั้งเนื่อผ้าที่มีความหลากหลายอย่างเช่น ลายรังผึ้ง ดอบบี้สีต่างๆ เนื้อผ้าเบาเหมาะสำหรับใส่สบายๆ ตอนเช้าและหลังอาบน้ำ
@@ -296,7 +356,12 @@
       <v-card elevation="7">
        <v-layout align-center>
         <v-flex>
-          <h1 style="text-decoration: underline;font-size: 40px" class="text-xs-center green--text text--darken-3 font-weight-bold mb-5 mt-3">Our Customers</h1>
+          <div class="d-flex d-flex hidden-xs-only">
+            <h1 style="text-decoration: underline;font-size: 40px" class="text-xs-center green--text text--darken-3 font-weight-bold mb-3 mt-3">Our Customers</h1>
+          </div>
+          <div class="d-flex hidden-sm-and-up">
+            <h3 style="text-decoration: underline;font-size:38px;" class="text-xs-center green--text text--darken-3 font-weight-bold mb-3 mt-3">Our Customers<i class="fab fa-accessible-icon"></i></h3>
+          </div>
         </v-flex>
       </v-layout>
       <v-layout row wrap>
