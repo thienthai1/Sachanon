@@ -1,37 +1,8 @@
 <template>
   <v-container class="grey lighten-4" style="opacity=0.5;">
-      </v-layout>
-        <v-carousel>
-          <v-carousel-item
-            v-for="(item,i) in slides"
-            :key="i"
-          >
-            
-                    <v-img
-                      :src="item.src"
-                      position="30% 50%"
-                      height=100%
-                      width=100%
-                    >
-
-                    <template v-slot:placeholder>
-                      <v-layout
-                        fill-height
-                        align-center
-                        justify-center
-                        ma-0
-                      >
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                      </v-layout>
-                    </template>
-
-                    </v-img>
-          </v-carousel-item>
-        </v-carousel>
-    <v-divider class="my-3"></v-divider>
-       <v-layout align-center>
+       <v-layout>
         <v-flex>
-          <v-card elevation="7">
+          <v-card class="mx-auto" max-width="600" elevation="7">
           <div class="d-flex">
             <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
           </div>
@@ -43,6 +14,61 @@
 
         </v-flex>
       </v-layout>
+    <v-divider class="my-3"></v-divider>
+      <v-layout row wrap align-center>
+        <v-flex xs12 sm6>
+           <v-carousel>
+            <v-carousel-item
+              v-for="(item,i) in slides"
+              :key="i"
+            >
+              
+                      <v-img
+                        :src="item.src"
+                        position="30% 50%"
+                        height=100%
+                        width=100%
+                      >
+
+                      <template v-slot:placeholder>
+                        <v-layout
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0
+                        >
+                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                        </v-layout>
+                      </template>
+
+                      </v-img>
+            </v-carousel-item>
+          </v-carousel>           
+        </v-flex>
+        <v-flex xs12 sm6 class="pa-2">
+            <v-img
+              :src="require('../assets/809.png')"
+              class="grey lighten-2"
+            >
+            </v-img>
+        </v-flex>
+      </v-layout>
+      </v-layout>
+<!--     <v-divider class="my-3"></v-divider>
+       <v-layout align-center>
+        <v-flex>
+          <v-card elevation="7">
+          <div class="d-flex">
+            <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
+          </div>
+          <v-card-text style="text-align: justify;font-family: 'Prompt', sans-serif;font-size:18px;" class="text-xs-center font-italic pt-1 green--text text--darken-2 font-weight-bold">
+            "ผ้าโรงงานของเราประกอบไปด้วย ผ้าขนหนูหลากหลายประเภทไม่ว่าจะเป็น ผ้าเช็ดตัว ผ้าขนหนูพรีเมี่ยม ผ้าเช็ดหน้า ผ้าเช็ดผม ผ้าสำหรับเป็นของชำร่วยให้ลูกค้าผ้าสำหรับธุรกิจสปาและโรงแรม รวมถึง ผ้าขนหนูรับไหว้สำหรับงานแต่งงานแบบต่างๆ"
+                  "เราผลิตและจำหน่ายสินค้าเช่น ผ้าขนหนู ผ้าเช็ดผม ผ้าเช็ดมือ ผ้าปู เครื่องนอน เกรดพรีเมี่ยมสำหรับ โรงแรม รีสอร์ท สปา และสามารถใช้สำหรับเป็นของชำร่วยเพื่อแจกในงานและโอกาสต่างๆได้ เรารับประกันคุณภาพการทำงานกว่า 10 ปีคัดสรรสิ่งที่ดีที่สุดสำหรับลูกค้าทุกท่าน"
+          </v-card-text>
+          </v-card>
+
+        </v-flex>
+      </v-layout> -->
     <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
         <v-flex xs12 sm6>
