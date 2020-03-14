@@ -16,7 +16,7 @@
       </v-layout>
     <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm5>
            <v-carousel>
             <v-carousel-item
               v-for="(item,i) in slides"
@@ -45,7 +45,7 @@
             </v-carousel-item>
           </v-carousel>           
         </v-flex>
-        <v-flex xs12 sm6 class="pa-2">
+        <v-flex xs12 sm7 class="pa-2">
             <v-img
               :src="require('../assets/809.png')"
               class="grey lighten-2"
