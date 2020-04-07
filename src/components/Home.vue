@@ -37,6 +37,10 @@
                     :key="item.tab"
                   >
 
+                      <div class="proDuctList">
+                          <div id="proDuctImg">
+                          </div>
+                      </div>
 
                   </v-tab-item>
                 </v-tabs-items>
