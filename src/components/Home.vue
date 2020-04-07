@@ -1,7 +1,7 @@
 <template>
   <v-container class="grey lighten-4" style="opacity=0.5;">
        <v-layout>
-        <v-flex>
+        <v-flex id="bgHead">
           <v-card class="mx-auto" max-width="600" elevation="7">
           <div class="d-flex">
             <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
@@ -15,6 +15,35 @@
         </v-flex>
       </v-layout>
     <v-divider class="my-3"></v-divider>
+      <v-layout>
+          <v-flex>
+            <v-card>
+                <v-tabs
+                  v-model="tab"
+                  style="background-color:#5b6ce1"
+                  dark
+                >
+                  <v-tab
+                    v-for="item in items"
+                    :key="item.tab"
+                  >
+                    {{ item.tab }}
+                  </v-tab>
+                </v-tabs>
+
+                <v-tabs-items v-model="tab">
+                  <v-tab-item
+                    v-for="item in items"
+                    :key="item.tab"
+                  >
+
+
+                  </v-tab-item>
+                </v-tabs-items>
+              </v-card>  
+          </v-flex>
+      </v-layout>
+     <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
         <v-flex xs12 sm5>
            <v-carousel>
@@ -54,21 +83,6 @@
         </v-flex>
       </v-layout>
       </v-layout>
-<!--     <v-divider class="my-3"></v-divider>
-       <v-layout align-center>
-        <v-flex>
-          <v-card elevation="7">
-          <div class="d-flex">
-            <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
-          </div>
-          <v-card-text style="text-align: justify;font-family: 'Prompt', sans-serif;font-size:18px;" class="text-xs-center font-italic pt-1 green--text text--darken-2 font-weight-bold">
-            "ผ้าโรงงานของเราประกอบไปด้วย ผ้าขนหนูหลากหลายประเภทไม่ว่าจะเป็น ผ้าเช็ดตัว ผ้าขนหนูพรีเมี่ยม ผ้าเช็ดหน้า ผ้าเช็ดผม ผ้าสำหรับเป็นของชำร่วยให้ลูกค้าผ้าสำหรับธุรกิจสปาและโรงแรม รวมถึง ผ้าขนหนูรับไหว้สำหรับงานแต่งงานแบบต่างๆ"
-                  "เราผลิตและจำหน่ายสินค้าเช่น ผ้าขนหนู ผ้าเช็ดผม ผ้าเช็ดมือ ผ้าปู เครื่องนอน เกรดพรีเมี่ยมสำหรับ โรงแรม รีสอร์ท สปา และสามารถใช้สำหรับเป็นของชำร่วยเพื่อแจกในงานและโอกาสต่างๆได้ เรารับประกันคุณภาพการทำงานกว่า 10 ปีคัดสรรสิ่งที่ดีที่สุดสำหรับลูกค้าทุกท่าน"
-          </v-card-text>
-          </v-card>
-
-        </v-flex>
-      </v-layout> -->
     <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
         <v-flex xs12 sm6>
@@ -192,17 +206,6 @@
                     class="grey lighten-2"
                   >
 
-                  <!--<template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
-                    >
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-                  </template> -->
-
                   </v-img>
             </v-flex>
           </v-layout>
@@ -316,17 +319,6 @@
                               position=30%
                               class="grey lighten-2"
                             >
-                              
-                            <!--<template v-slot:placeholder>
-                              <v-layout
-                                fill-height
-                                align-center
-                                justify-center
-                                ma-0
-                              >
-                                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                              </v-layout>
-                            </template> -->
 
                             </v-img>
                       </v-flex>
@@ -380,17 +372,6 @@
                     height=100%
                     class="grey lighten-2"
                   >
-                    
-                  <!--<template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
-                    >
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-                  </template> -->
 
                   </v-img>
             </v-flex>
@@ -460,16 +441,6 @@
                   aspect-ratio="1"
                   class="grey lighten-2 black--text"
                 >
-                  <!--<template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
-                    >
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-                  </template> -->
               <v-container fill-height fluid>
                   <v-layout fill-height>
                     <v-flex xs12 align-end flexbox>
@@ -508,6 +479,12 @@ td, th {
   padding: 8px;
 }
 
+#bgHead {
+    background-image: url(/img/bath_towel-74.a95b498b.jpg);
+    padding: 27px;
+    opacity: 0.8;
+}
+
 tr:nth-child(even) {
   background-color: #dddddd;
 }
@@ -521,7 +498,15 @@ import towel from "../assets/bath_towel-84.jpg"
   export default {
   data () {
       return {
+        tab: null,
         towel: towel,
+        items: [
+          { tab: 'ผ้าเช็ดตัว', content: 'Tab 1 Content' },
+          { tab: 'ผู้ปูที่นอน', content: 'Tab 2 Content' },
+          { tab: 'ปลอกหมอน', content: 'Tab 3 Content' },
+          { tab: 'ผ้าเช็ดเท้า', content: 'Tab 4 Content' },
+          { tab: 'เสื้อคลุม', content: 'Tab 5 Content' },
+        ],
         slides: [
           {
             src: slide1,
