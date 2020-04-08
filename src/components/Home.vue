@@ -46,14 +46,14 @@
                     ">
                       <div v-for="ct in item.content" class="proDuctList" style="margin: auto;">
                           <div id="proDuctImg" style="margin:10px">
-                            <a href="#"><img :src="ct.pic" width="150" height="150" /></a>
+                            <a href="#"><img :src="ct.pic" width="300" height="300" /></a>
                           </div>
-                          <v-divider style="margin:10px" width="150" class="my-3"></v-divider>
-                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:150px;padding-bottom: 16px">
-                              <span style="color:red;width:80px;float:left">{{ ct.title }}</span>
-                              <span style="color:green;float:right">{{ ct.price }} ฿</span>
-                              <span style="color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
-                              <span style="color:grey;clear:both">น้ำหนัก: {{ ct.weight }}</span><br>
+                          <v-divider style="margin:10px" width="300" class="my-3"></v-divider>
+                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:300px;padding-bottom: 16px">
+                              <span style="font-size: 18px;color:red;width:200px;float:left">{{ ct.title }}</span>
+                              <span style="font-size: 18px;color:green;float:right">{{ ct.price }} ฿</span>
+                              <br><span style="font-size: 18px;color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
+                              <span style="font-size: 18px;color:grey;clear:both">น้ำหนัก: {{ ct.weight }}</span><br>
                           </div>
                       </div>
                     </div>
@@ -98,11 +98,11 @@
                             <a href="#"><img :src="ct.pic" width="150" height="150" /></a>
                           </div>
                           <v-divider style="margin:10px" width="150" class="my-3"></v-divider>
-                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:150px;padding-bottom: 16px">
-                              <span style="color:red;width:80px;float:left">{{ ct.title }}</span>
+                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:160px;padding-bottom: 16px">
+                              <span style="color:red;width:110px;float:left">{{ ct.title }}</span>
                               <span style="color:green;float:right">{{ ct.price }} ฿</span>
                               <span style="color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
-                              <span style="color:grey;clear:both">น้ำหนัก: {{ ct.weight }}</span><br>
+                              <span style="color:grey;">น้ำหนัก: {{ ct.weight }}</span><br>
                           </div>
                       </div>
                     </div>
@@ -537,82 +537,106 @@ import towel from "../assets/bath_towel-84.jpg"
         tab: null,
         productLists: [
           {
-            tab: 'ผ้าเช็ดตัว',
+            tab: 'ผ้าขนหนู',
             content:[
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"170",
-                      weight:"18 ปอนด์",
-                      spec:"30x60 นิ้ว",
+                      pic: require('../assets/S__3530765.jpg'),
+                      title:"ผ้าเช็ดตัว(ขาว)",
+                      price:"175",
+                      weight:"14 ปอนด์",
+                      spec:"27x54 นิ้ว(ขนคู่)",
                 },
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"160",
+                      pic: require('../assets/S__3530768.jpg'),
+                      title:"ผ้าเช็ดตัว(สี)",
+                      price:"193",
+                      weight:"14 ปอนด์",
+                      spec:"27x54 นิ้ว(ขนคู่)",
+                },
+                {
+                      pic: require('../assets/S__3530762.jpg'),
+                      title:"ผ้าเช็ดตัว(ขาว)",
+                      price:"150",
+                      weight:"12 ปอนด์",
+                      spec:"27x54 นิ้ว(ขนคู่)",
+                },
+                {
+                      pic: require('../assets/S__3530766.jpg'),
+                      title:"ผ้าเช็ดตัว(สี)",
+                      price:"165",
+                      weight:"12 ปอนด์",
+                      spec:"27x54 นิ้ว(ขนคู่)",
+                },
+                //30x60
+                {
+                      pic: require('../assets/S__3530769.jpg'),
+                      title:"ผ้าเช็ดตัว(ขาว)",
+                      price:"200",
                       weight:"16 ปอนด์",
-                      spec:"27x54 นิ้ว",
+                      spec:"30x60 นิ้ว(ขนคู่)",
                 },
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"170",
-                      weight:"18 ปอนด์",
-                      spec:"30x60 นิ้ว",
-                },
-                {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"160",
+                      pic: require('../assets/S__3530761.jpg'),
+                      title:"ผ้าเช็ดตัว(สี)",
+                      price:"220",
                       weight:"16 ปอนด์",
-                      spec:"27x54 นิ้ว",
+                      spec:"30x60 นิ้ว(ขนคู่)",
                 },
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"170",
+                      pic: require('../assets/S__3530764.jpg'),
+                      title:"ผ้าเช็ดตัว(สี)",
+                      price:"225",
                       weight:"18 ปอนด์",
-                      spec:"30x60 นิ้ว",
+                      spec:"30x60 นิ้ว(ขนคู่)",
                 },
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"160",
-                      weight:"16 ปอนด์",
-                      spec:"27x54 นิ้ว",
-                },
-                {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"170",
+                      pic: require('../assets/S__3530763.jpg'),
+                      title:"ผ้าเช็ดตัว(สี)",
+                      price:"248",
                       weight:"18 ปอนด์",
-                      spec:"30x60 นิ้ว",
+                      spec:"30x60 นิ้ว(ขนคู่)",
+                },
+                //ผ้าเช็ดผม
+                {
+                      pic: require('../assets/bath_towel-74.jpg'),
+                      title:"ผ้าเช็ดผม(ขาว)",
+                      price:"43.75",
+                      weight:"3.5 ปอนด์",
+                      spec:"15x30 นิ้ว(ขนคู่)",
                 },
                 {
-                      pic: require('../assets/towel-8.jpg'),
-                      title:"ผ้าเช็ดตัว",
-                      price:"160",
-                      weight:"16 ปอนด์",
-                      spec:"27x54 นิ้ว",
+                      pic: require('../assets/S__3530757.jpg'),
+                      title:"ผ้าเช็ดผม(สี)",
+                      price:"48",
+                      weight:"3.5 ปอนด์",
+                      spec:"15x30 นิ้ว(ขนคู่)",
+                },
+                //ผ้าเช็ดมือแขวน
+                {
+                      pic: require('../assets/S__3530755.jpg'),
+                      title:"ผ้าเช็ดมือแขวน(สี)",
+                      price:"15",
+                      weight:"3.5 ปอนด์",
+                      spec:"12x12 นิ้ว(ขนคู่)"
                 },
               ]
           },
           {
-            tab: 'ผ้าปูที่นอน',
+            tab: 'ผ้าเช็ดเท้า',
             content:[
                 {
-                      pic: require('../assets/S__19914825.jpg'),
-                      title:"ผ้าปูที่นอน",
-                      price:"170",
-                      weight:"18 ปอนด์",
-                      spec:"30x60 นิ้ว",
+                      pic: require('../assets/S__3121220.jpg'),
+                      title:"ผ้าเช็ดเท้า(ขาว)",
+                      price:"80",
+                      weight:"8 ปอนด์",
+                      spec:"17x28 นิ้ว",
                 },
                 {
-                      pic: require('../assets/S__19914825.jpg'),
-                      title:"ผ้าปูที่นอน",
-                      price:"160",
-                      weight:"16 ปอนด์",
-                      spec:"27x54 นิ้ว",
+                      pic: require('../assets/S__3530758.jpg'),
+                      title:"ผ้าเช็ดเท้า(สี)",
+                      price:"100",
+                      weight:"8 ปอนด์",
+                      spec:"17x28 นิ้ว",
                 },
             ]
           }
