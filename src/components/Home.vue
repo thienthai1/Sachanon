@@ -14,17 +14,17 @@
 
         </v-flex>
       </v-layout>
-    <v-divider class="my-3"></v-divider>
-      <v-layout>
+          <v-divider class="my-3"></v-divider>
+      <v-layout v-if="mobileCheck === true">
           <v-flex>
-            <v-card>
+            <v-card style="padding-bottom:5px;">
                 <v-tabs
                   v-model="tab"
                   style="background-color:#5b6ce1"
                   dark
                 >
                   <v-tab
-                    v-for="item in items"
+                    v-for="item in productLists"
                     :key="item.tab"
                   >
                     {{ item.tab }}
@@ -33,18 +33,83 @@
 
                 <v-tabs-items v-model="tab">
                   <v-tab-item
-                    v-for="item in items"
+                    v-for="item in productLists"
                     :key="item.tab"
                   >
 
-                      <div class="proDuctList">
-                          <div id="proDuctImg">
+                    <div style="
+                    display:grid;
+                    grid-column-gap: 5px;
+                    grid-template-columns: 300px;
+                    background-color: white;
+                    padding: 10px;          
+                    ">
+                      <div v-for="ct in item.content" class="proDuctList" style="margin: auto;">
+                          <div id="proDuctImg" style="margin:10px">
+                            <a href="#"><img :src="ct.pic" width="150" height="150" /></a>
+                          </div>
+                          <v-divider style="margin:10px" width="150" class="my-3"></v-divider>
+                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:150px;padding-bottom: 16px">
+                              <span style="color:red;width:80px;float:left">{{ ct.title }}</span>
+                              <span style="color:green;float:right">{{ ct.price }} ฿</span>
+                              <span style="color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
+                              <span style="color:grey;clear:both">น้ำหนัก: {{ ct.weight }}</span><br>
                           </div>
                       </div>
-
+                    </div>
                   </v-tab-item>
                 </v-tabs-items>
-              </v-card>  
+                <span style="margin:10px;font-family: 'Prompt', sans-serif;color:black;clear:both">*ราคานี้เป็นราคาขายปลีกเบื้องต้นสามารถ</span><br>
+                <span style="margin:10px;font-family: 'Prompt', sans-serif;color:black;clear:both">เปลี่ยนแปลงได้ตามจำนวนการสั่งซื้อ</span>
+              </v-card>
+          </v-flex>
+      </v-layout>
+      <v-layout v-else>
+          <v-flex>
+            <v-card style="padding-bottom:5px;">
+                <v-tabs
+                  v-model="tab"
+                  style="background-color:#5b6ce1"
+                  dark
+                >
+                  <v-tab
+                    v-for="item in productLists"
+                    :key="item.tab"
+                  >
+                    {{ item.tab }}
+                  </v-tab>
+                </v-tabs>
+
+                <v-tabs-items v-model="tab">
+                  <v-tab-item
+                    v-for="item in productLists"
+                    :key="item.tab"
+                  >
+
+                    <div style="
+                    display:grid;
+                    grid-column-gap: 5px;
+                    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+                    background-color: white;
+                    padding: 10px;          
+                    ">
+                      <div v-for="ct in item.content" class="proDuctList">
+                          <div id="proDuctImg" style="margin:10px">
+                            <a href="#"><img :src="ct.pic" width="150" height="150" /></a>
+                          </div>
+                          <v-divider style="margin:10px" width="150" class="my-3"></v-divider>
+                          <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:150px;padding-bottom: 16px">
+                              <span style="color:red;width:80px;float:left">{{ ct.title }}</span>
+                              <span style="color:green;float:right">{{ ct.price }} ฿</span>
+                              <span style="color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
+                              <span style="color:grey;clear:both">น้ำหนัก: {{ ct.weight }}</span><br>
+                          </div>
+                      </div>
+                    </div>
+                  </v-tab-item>
+                </v-tabs-items>
+                <span style="margin:10px;font-family: 'Prompt', sans-serif;color:black;clear:both">*ราคานี้เป็นราคาขายปลีกเบื้องต้นสามารถเปลี่ยนแปลงได้ตามจำนวนการสั่งซื้อ</span>
+              </v-card>
           </v-flex>
       </v-layout>
      <v-divider class="my-3"></v-divider>
@@ -129,7 +194,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="towel"
+                    :src="require('../assets/towel-8.jpg')"
                     height=100%
                     position=10%
                     aspect-ratio="1"
@@ -492,6 +557,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.v-tabs__container {
+  background-color: #1565c0;
+  font-family: 'Prompt', sans-serif;
+}
+
 </style>
 
 <script>
@@ -502,15 +573,90 @@ import towel from "../assets/bath_towel-84.jpg"
   export default {
   data () {
       return {
+        mobileCheck: this.$vuetify.breakpoint.xs,
         tab: null,
-        towel: towel,
-        items: [
-          { tab: 'ผ้าเช็ดตัว', content: 'Tab 1 Content' },
-          { tab: 'ผู้ปูที่นอน', content: 'Tab 2 Content' },
-          { tab: 'ปลอกหมอน', content: 'Tab 3 Content' },
-          { tab: 'ผ้าเช็ดเท้า', content: 'Tab 4 Content' },
-          { tab: 'เสื้อคลุม', content: 'Tab 5 Content' },
-        ],
+        productLists: [
+          {
+            tab: 'ผ้าเช็ดตัว',
+            content:[
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"170",
+                      weight:"18 ปอนด์",
+                      spec:"30x60 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"160",
+                      weight:"16 ปอนด์",
+                      spec:"27x54 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"170",
+                      weight:"18 ปอนด์",
+                      spec:"30x60 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"160",
+                      weight:"16 ปอนด์",
+                      spec:"27x54 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"170",
+                      weight:"18 ปอนด์",
+                      spec:"30x60 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"160",
+                      weight:"16 ปอนด์",
+                      spec:"27x54 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"170",
+                      weight:"18 ปอนด์",
+                      spec:"30x60 นิ้ว",
+                },
+                {
+                      pic: require('../assets/towel-8.jpg'),
+                      title:"ผ้าเช็ดตัว",
+                      price:"160",
+                      weight:"16 ปอนด์",
+                      spec:"27x54 นิ้ว",
+                },
+              ]
+          },
+          {
+            tab: 'ผ้าปูที่นอน',
+            content:[
+                {
+                      pic: require('../assets/S__19914825.jpg'),
+                      title:"ผ้าปูที่นอน",
+                      price:"170",
+                      weight:"18 ปอนด์",
+                      spec:"30x60 นิ้ว",
+                },
+                {
+                      pic: require('../assets/S__19914825.jpg'),
+                      title:"ผ้าปูที่นอน",
+                      price:"160",
+                      weight:"16 ปอนด์",
+                      spec:"27x54 นิ้ว",
+                },
+            ]
+          }
+        ],  
         slides: [
           {
             src: slide1,
