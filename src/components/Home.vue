@@ -114,46 +114,6 @@
       </v-layout>
      <v-divider class="my-3"></v-divider>
       <v-layout row wrap align-center>
-        <v-flex xs12 sm5>
-           <v-carousel>
-            <v-carousel-item
-              v-for="(item,i) in slides"
-              :key="i"
-            >
-              
-                      <v-img
-                        :src="item.src"
-                        position="30% 50%"
-                        height=100%
-                        width=100%
-                      >
-
-                      <template v-slot:placeholder>
-                        <v-layout
-                          fill-height
-                          align-center
-                          justify-center
-                          ma-0
-                        >
-                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                        </v-layout>
-                      </template>
-
-                      </v-img>
-            </v-carousel-item>
-          </v-carousel>           
-        </v-flex>
-        <v-flex xs12 sm7 class="pa-2">
-            <v-img
-              :src="require('../assets/809.png')"
-              class="grey lighten-2"
-            >
-            </v-img>
-        </v-flex>
-      </v-layout>
-      </v-layout>
-    <v-divider class="my-3"></v-divider>
-      <v-layout row wrap align-center>
         <v-flex xs12 sm6>
           <div>
               <v-card elevation="15" class="ml-1 mr-3 blue darken-22">
@@ -194,7 +154,7 @@
           <v-layout row wrap>
             <v-flex d-flex>
                   <v-img
-                    :src="require('../assets/towel-8.jpg')"
+                    :src="require('../assets/bath_towel-55.jpg')"
                     height=100%
                     position=10%
                     aspect-ratio="1"
