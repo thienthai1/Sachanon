@@ -7,14 +7,27 @@
             <h3 style="text-decoration: underline;font-size:50px;" class="text-xs-center font-weight-medium brown--text text--lighten-2">Sachanon Textile<i class="fab fa-accessible-icon"></i></h3>
           </div>
           <v-card-text style="text-align: justify;font-family: 'Prompt', sans-serif;font-size:18px;" class="text-xs-center font-italic pt-1 green--text text--darken-2 font-weight-bold">
-<!--             "ผ้าโรงงานของเราประกอบไปด้วย ผ้าขนหนูหลากหลายประเภทไม่ว่าจะเป็น ผ้าเช็ดตัว ผ้าขนหนูพรีเมี่ยม ผ้าเช็ดหน้า ผ้าเช็ดผม ผ้าสำหรับเป็นของชำร่วยให้ลูกค้าผ้าสำหรับธุรกิจสปาและโรงแรม รวมถึง ผ้าขนหนูรับไหว้สำหรับงานแต่งงานแบบต่างๆ" -->
                   "เราผลิตและจำหน่ายสินค้าเช่น ผ้าขนหนู ผ้าเช็ดผม ผ้าเช็ดมือ ผ้าปู เครื่องนอน เกรดพรีเมี่ยมสำหรับ โรงแรม รีสอร์ท สปา และสามารถใช้สำหรับเป็นของชำร่วยเพื่อแจกในงานและโอกาสต่างๆได้ เรารับประกันคุณภาพการทำงานกว่า 10 ปีคัดสรรสิ่งที่ดีที่สุดสำหรับลูกค้าทุกท่าน"
           </v-card-text>
           </v-card>
 
         </v-flex>
       </v-layout>
+      <v-divider class="my-3"></v-divider>
+      <v-layout v-if="listPic.length!=0" row wrap align-center>
+        <v-flex xs12 sm12>
+          <div 
+            class="banner" 
+            id="bn"
+            ref="bn"
+          >
+                <div v-for="i in listPic.length" class="pagination">
+                  <a v-on:click="getLink(i)" href="#">{{ i }}</a>
+                </div>
+          </div>
           <v-divider class="my-3"></v-divider>
+        </v-flex>
+      </v-layout>
       <v-layout v-if="mobileCheck === true">
           <v-flex>
             <v-card style="padding-bottom:5px;">
@@ -523,6 +536,64 @@ tr:nth-child(even) {
   font-family: 'Prompt', sans-serif;
 }
 
+.banner {
+    background: url('../assets/ozonevilla.jpg');
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: black;
+  opacity: 0.5;
+  margin: 1px;
+}
+
+.pagination a.active {
+    color: white;
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 </style>
 
 <script>
@@ -533,6 +604,16 @@ import towel from "../assets/bath_towel-84.jpg"
   export default {
   data () {
       return {
+        countList:0,
+        bnHeight:"1",
+        bnWidth:"1",
+        bgUrl: require('../assets/ozonevilla.jpg'),
+        listPic: [],
+        window: {
+            width: window.innerWidth,
+            height: window.innerHeight
+        },
+        page: 1,
         mobileCheck: this.$vuetify.breakpoint.xs,
         tab: null,
         productLists: [
@@ -663,10 +744,40 @@ import towel from "../assets/bath_towel-84.jpg"
           { title: 'The Loft Hillside เชียงไหม่', url: require('../assets/theLoft.jpg') }
         ]
       }
+    },
+    methods: {
+
+      getLink(num){
+        document.getElementsByClassName("banner")[0].style.background = "url(" + this.listPic[num-1] + ")";
+        document.getElementsByClassName("banner")[0].style.backgroundSize = "100% 500px";
+        document.getElementsByClassName("banner")[0].style.backgroundRepeat = "no-repeat";
+      },
+      test(){
+        alert("moo");
+      }
+
+    },
+    created: function() {
+
+    },
+    updated: function () {
+      this.$nextTick(function () {
+        if(this.listPic.length > 1){
+          setInterval(() => {
+              console.log("next => " + this.countList)
+              if(this.countList < this.listPic.length){
+                document.getElementsByClassName("banner")[0].style.background = "url(" + this.listPic[this.countList] + ")";
+                document.getElementsByClassName("banner")[0].style.backgroundSize = "100% 500px";
+                document.getElementsByClassName("banner")[0].style.backgroundRepeat = "no-repeat";
+                //animation: fadeIn ease 10s;
+                document.getElementsByClassName("banner")[0].style.animation = "fadeIn ease 5s";
+                this.countList += 1;            
+              }else{
+                this.countList = 0
+              }
+          }, 5000);
+        }
+      })
     }
   }
 </script>
-
-<style>
-
-</style>
