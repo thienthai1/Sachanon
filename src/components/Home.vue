@@ -116,7 +116,7 @@
                               <span style="color:red;width:110px;float:left">{{ ct.title }}</span>
                               <span style="color:green;float:right">{{ ct.price }} ฿</span>
                               <span style="color:grey;clear:both">ขนาด: {{ ct.spec}}</span><br>
-                              <span style="color:grey;">น้ำหนัก: {{ ct.weight }}</span><br>
+                              <span style="color:grey;">สเป็ค: {{ ct.weight }}</span><br>
                           </div>
                       </div>
                     </div>
@@ -721,7 +721,149 @@ import towel from "../assets/bath_towel-84.jpg"
                       spec:"17x28 นิ้ว",
                 },
             ]
-          }
+          },
+           {
+    tab: 'ผ้าปู',
+    content:[
+        {
+                pic: require('../assets/S__55353350.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"350",
+                weight:"250 เส้นริ้วสี",
+                spec:"3.5'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353351.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"380",
+                weight:"250 เส้นริ้วสี",
+                spec:"5'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353352.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"410",
+                weight:"250 เส้นริ้วสี",
+                spec:"6'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353350.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"370",
+                weight:"250 เส้นริ้วสี",
+                spec:"4'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353351.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"420",
+                weight:"250 เส้นริ้วสี",
+                spec:"7'x6.5'x9' ฟุต",
+        },
+        //เรียบ 250
+        {
+                pic: require('../assets/S__55353350.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"340",
+                weight:"250 เส้นเรียบสี",
+                spec:"3.5'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353351.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"370",
+                weight:"250 เส้นเรียบสี",
+                spec:"5'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353352.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"400",
+                weight:"250 เส้นเรียบสี",
+                spec:"6'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353350.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"350",
+                weight:"250 เส้นเรียบสี",
+                spec:"4'x6.5'x9' ฟุต",
+        },
+        {
+                pic: require('../assets/S__55353351.jpg'),
+                title:"ผ้าปูรัดมุม",
+                price:"620",
+                weight:"410 เส้นริ้วสี",
+                spec:"7'x6.5'x9' ฟุต",
+        },
+        ]
+},
+{
+    tab: 'ปลอกหมอน',
+    content:[
+        {
+                pic: require('../assets/pillow1.jpg'),
+                title:"ปลอกหมอน",
+                price:"90",
+                weight:"250 เส้น",
+                spec:"20'x30'x7' ฟุต",
+        },
+        {
+                pic: require('../assets/1675.jpg'),
+                title:"ปลอกหมอนข้าง",
+                price:"100",
+                weight:"250 เส้น",
+                spec:"24'x42' ฟุต",
+        },
+        {
+                pic: require('../assets/S__20094980.jpg'),
+                title:"ปลอกหมอนบอดี้",
+                price:"150",
+                weight:"250 เส้น",
+                spec:"20'x30'x7' ฟุต",
+        }
+        ]
+},
+{
+    tab: 'ปลอกนวม',
+    content:[
+        {
+                pic: require('../assets/S__11509786.jpg'),
+                title:"ปลอกนวม",
+                price:"880",
+                weight:" ",
+                spec:"70'x90'x100' ฟุต",
+        },
+        {
+                pic: require('../assets/S__11509786.jpg'),
+                title:"ปลอกนวม",
+                price:"950",
+                weight:" ",
+                spec:"700'x100'x10' ฟุต",
+        },
+        {
+                pic: require('../assets/S__11509786.jpg'),
+                title:"ปลอกนวม",
+                price:"1050",
+                weight:" ",
+                spec:"80'x100'x10' ฟุต",
+        },
+        {
+                pic: require('../assets/S__11509786.jpg'),
+                title:"ปลอกนวม",
+                price:"1080",
+                weight:" ",
+                spec:"90'x100'x10' ฟุต",
+        },
+        {
+                pic: require('../assets/S__11509786.jpg'),
+                title:"ปลอกนวม",
+                price:"1080",
+                weight:" ",
+                spec:"100'x90'x10' ฟุต",
+        },
+        ]
+}
         ],  
         slides: [
           {
