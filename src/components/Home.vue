@@ -101,14 +101,15 @@
 
                     <div style="
                     display:grid;
-                    grid-column-gap: 5px;
-                    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+                    grid-column-gap: 35px;
+                    grid-template-columns: 180px 180px 180px 180px;
                     background-color: white;
-                    padding: 10px;          
+                    padding: 10px;
+                    overflow: auto;        
                     ">
                       <div v-for="ct in item.content" class="proDuctList">
                           <div id="proDuctImg" style="margin:10px">
-                            <a href="#"><img :src="ct.pic" width="150" height="150" /></a>
+                            <a href="#"><img style="position:relative;overflow:hidden;" :src="ct.pic" width="150" height="150" /></a>
                           </div>
                           <v-divider style="margin:10px" width="150" class="my-3"></v-divider>
                           <div id="proDuctDetail" style="line-height:23px;font-family: 'Prompt', sans-serif;margin:10px;width:160px;padding-bottom: 16px">
