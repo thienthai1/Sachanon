@@ -698,7 +698,7 @@ import towel from "../assets/bath_towel-84.jpg"
                       pic: require('../assets/S__3530755.jpg'),
                       title:"ผ้าเช็ดมือแขวน(สี)",
                       price:"15",
-                      weight:"3.5 ปอนด์",
+                      weight:"1.5 ปอนด์",
                       spec:"12x12 นิ้ว(ขนคู่)"
                 },
               ]
