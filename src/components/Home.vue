@@ -28,7 +28,7 @@
           <v-divider class="my-3"></v-divider>
         </v-flex>
       </v-layout>
-      <v-layout v-if="mobileCheck === true">
+      <!--<v-layout v-if="mobileCheck === true">
           <v-flex>
             <v-card style="padding-bottom:5px;">
                 <v-tabs
@@ -126,7 +126,7 @@
               </v-card>
           </v-flex>
       </v-layout>
-     <v-divider class="my-3"></v-divider>
+     <v-divider class="my-3"></v-divider> -->
       <v-layout row wrap align-center>
         <v-flex xs12 sm6>
           <div>
