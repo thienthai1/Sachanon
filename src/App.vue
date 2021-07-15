@@ -32,6 +32,7 @@
             </v-list>
           </v-menu>
           <v-btn to="/aboutus" style="font-family: 'Prompt', sans-serif;font-size:15px" flat class="font-weight-bold">เกี่ยวกับเรา</v-btn>
+          <v-btn href="https://sachnontextile1165.blogspot.com/" target="_blank" style="font-family: 'Prompt', sans-serif;font-size:15px" flat class="font-weight-bold">บทความ</v-btn>
           <v-btn style="font-family: 'Prompt', sans-serif;font-size:15px" to="/contact" flat class="font-weight-bold">ติดต่อ</v-btn>
         </v-toolbar-items>
       </v-toolbar>
@@ -112,6 +113,14 @@
             </v-list-tile-action>
             <v-list-tile-content  class="pr-5">
               <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">เกี่ยวกับเรา</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile href="https://sachnontextile1165.blogspot.com/" target="_blank" @click="">
+            <v-list-tile-action class="pl-3">
+              <v-icon>create</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content  class="pr-5">
+              <v-list-tile-title style="font-family: 'Prompt', sans-serif;font-size:15px">บทความ</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile to="/contact" @click="">
